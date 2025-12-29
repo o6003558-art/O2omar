@@ -8,6 +8,7 @@
     <meta name="description"
         content="Welcome KH.I made this website to help you develop your English , My regards OMAR KHALED . " />
     <meta name="keywords" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="footer.jpg" type="image/x-icon">
 
 </head>
@@ -43,22 +44,48 @@
         </div>
     </section>
     <div class="contain-pdf">
-        <div class="pdf"><a href="O2.pdf" download="download" target="_blank">O2 </a></div>
-        <div class="pdf"><a href="#" target="_blank">grammar</a></div>
-        <div class="pdf"><a href="#" target="_blank">prepositions</a></div>
+        <a href="O2.pdf" download="download">O2</a>
+        <a href="#">grammar</a>
+        <a href="#">prepositions</a>
     </div>
     <div class="images-grid">
         <img src="king M.jpg" />
         <img src="king O.jpg" />
         <img src="Omarmann.jpg" />
     </div>
+    <h2>sign up </h2>
+    <input type="email" id="email" placeholder="Enter  a valid email ">
+    <input type="password" id="password" placeholder="password">
+    <button id="btnSignup">Create new account</button>
+    <button id="btnLogin">Log in </button>
     <footer>
         <img src="footer.jpg" />
         <div class="conclusion">
-            <a href="tel:+201032503375">contact me</a>
+            <a href="tel:+201032503375"><span class="alt">contact me</span></a>
         </div>
         <div class="foot"></div>
     </footer>
+    <script type="module">// Import the functions you need from the SDKs you need
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCkREI7rD0MksJjY1EXhXYiqkZDvkci6rA",
+            authDomain: "omar-kh-cabb9.firebaseapp.com",
+            projectId: "omar-kh-cabb9",
+            storageBucket: "omar-kh-cabb9.firebasestorage.app",
+            messagingSenderId: "420702978778",
+            appId: "1:420702978778:web:53dcd5b905f2fa8a55dbe3",
+            measurementId: "G-Y3ZFZ58L72"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);</script>
 </body>
 
 </html>
